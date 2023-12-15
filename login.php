@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,7 +55,7 @@
                     <h1 class="h4 text-gray-900 mb-4"><b>PAUD Al-Ikhlas</b></h1>
 
                     <?php 
-                    session_start();
+
                     
                     if(isset($_SESSION['pesan_registrasi'])) { ?>
 

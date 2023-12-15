@@ -55,7 +55,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Apps-Diyah</div>
+        <div class="sidebar-brand-text mx-3">Paud Al-Ikhlas</div>
       </a>
 
       <!-- Heading -->

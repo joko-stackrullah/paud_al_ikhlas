@@ -81,7 +81,10 @@ if(isset($_GET['action']) && $_GET['action'] == "edit") {
     $kegiatan_pelajaran = $_POST['kegiatan_pelajaran'];
     $nilai_siswa = $_POST['nilai_siswa'];
 
+    $query_update_foto = "";
+
     if($_FILES['bukti_kegiatan']['name'] != '') {
+        $query_update_foto =", bukti_kegiatan_upload = '$ubah_nama'";
 
         $ekstensi_diperbolehkan = array('png','jpg','jpeg');
         $nama_gambar = $_FILES['bukti_kegiatan']['name'];
@@ -107,9 +110,8 @@ if(isset($_GET['action']) && $_GET['action'] == "edit") {
 
 
     }
-
-
-    $query_kegiatan = mysqli_query($koneksi, "UPDATE kegiatan_mengajar SET tanggal = '$tanggal' , materi_pelajaran = '$materi_pelajaran', kegiatan_pelajaran = '$kegiatan_pelajaran', nilai_siswa = '$nilai_siswa', bukti_kegiatan_upload = '$ubah_nama' WHERE kegiatan_mengajar_id = '$kegiatan_mengajar_id'");
+   
+    $query_kegiatan = mysqli_query($koneksi, "UPDATE kegiatan_mengajar SET tanggal = '$tanggal' , materi_pelajaran = '$materi_pelajaran', kegiatan_pelajaran = '$kegiatan_pelajaran', nilai_siswa = '$nilai_siswa' $query_update_foto WHERE kegiatan_mengajar_id = '$kegiatan_mengajar_id'");
     if($query_kegiatan) {
         $_SESSION['pesan_sukses'] = "Data kegiatan berhasil diubah";
         header('location:siswa.php');
