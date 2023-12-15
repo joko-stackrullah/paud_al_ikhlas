@@ -10,8 +10,8 @@ $result_pendaftar = mysqli_query($koneksi, $sql_pendaftar);
 
 if(mysqli_num_rows($result_pendaftar)){
 
-    // $data_pendaftar = mysqli_fetch_array($result_pendaftar);
-    // $id_pendaftar = $data_pendaftar['id'];
+    $data_pendaftar = mysqli_fetch_array($result_pendaftar);
+    $id_pendaftar = $data_pendaftar['id'];
 
     // $sql_nilai = "SELECT * FROM nilai where pendaftar_id = '$id_pendaftar'";
     // $result_nilai = mysqli_query($koneksi, $sql_nilai);
