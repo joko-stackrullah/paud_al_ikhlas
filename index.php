@@ -60,7 +60,7 @@
               melalui website ini atau langsung datang ke tempat pendaftaran
             </p>
 
-            <a href="" class="btn btn-danger btn-lg rounded-pill"
+            <a href="registrasi.php" class="btn btn-danger btn-lg rounded-pill"
               >DAFTAR SEKARANG</a
             >
           </div>
