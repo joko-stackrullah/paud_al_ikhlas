@@ -24,15 +24,6 @@ if(!$result_wali) {
     die('Query Error : '. mysqli_error($koneksi));
 }
 
-$sql_nilai = "SELECT * FROM nilai where pendaftar_id = '$id_pendaftar'";
-$result_nilai = mysqli_query($koneksi, $sql_nilai);
-$data_nilai = mysqli_fetch_array($result_nilai);
-
-// cek hasil
-if(!$result_nilai) {
-    die('Query Error : '. mysqli_error($koneksi));
-}
-
 // ubah data wali kelas
 if(isset($_POST['btn_wali_kelas'])) {
 
