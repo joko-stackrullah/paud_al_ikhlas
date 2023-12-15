@@ -124,4 +124,16 @@
                     <th></th>
                     <th></th>
                     <th></th>
-          
+                    <th></th>
+                </tr>
+            </tfoot> -->
+        </table>
+    </div>
+  </div>
+</div>
+<script>
+
+</script>
+<!-- /.container-fluid -->
+
+<?php include('../template/footer.php'); ?>
